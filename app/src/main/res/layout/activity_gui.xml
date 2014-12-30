@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:id="@+id/relative_layout">
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:layout_width="185dp"
+            android:layout_height="235dp"
+            android:text="@string/forward_button"
+            android:id="@+id/forward_button"
+            android:layout_gravity="center_horizontal|top" />
+
+        <Button
+            android:layout_width="185dp"
+            android:layout_height="235dp"
+            android:text="@string/left_button"
+            android:id="@+id/left_button"
+            android:layout_gravity="left|center_vertical" />
+
+        <Button
+            android:layout_width="185dp"
+            android:layout_height="235dp"
+            android:text="@string/right_button"
+            android:id="@+id/right_button"
+            android:layout_gravity="right|center_vertical" />
+
+        <Button
+            android:layout_width="185dp"
+            android:layout_height="235dp"
+            android:text="@string/reverse_button"
+            android:id="@+id/reverse_button"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <Button
+            android:layout_width="185dp"
+            android:layout_height="300dp"
+            android:text="@string/stop_button"
+            android:id="@+id/stop_button"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="200dp"
+            android:text="@string/fire_button"
+            android:id="@+id/fire_button"
+            android:layout_gravity="right|top" />
+
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="200dp"
+            android:text="@string/honk_button"
+            android:id="@+id/honk_button"
+            android:layout_gravity="left|top" />
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:text="@string/exit_button"
+            android:id="@+id/exit_button"
+            android:layout_gravity="right|bottom" />
+    </FrameLayout>
+</RelativeLayout>
